@@ -1,4 +1,4 @@
-NOT READY YET! WIP!
+NOT READY YET! WIP! (I'm slowly uploading the files, when I'm done I'll upload some screenshots, but there are still a few kinks I need to work out)
 
 This is primarily a UI extension for MPV, it very slightly alters the layout of the base OSC, adds shuffle and repeat buttons, and thumbnail support based on thumbfast. Only tested on Linux and my edit of thumbfast also works only on Linux.
 
