@@ -5,3 +5,11 @@ This is primarily a UI extension for MPV, it very slightly alters the layout of 
 Dependencies: 
 
 * Fontawesome (for shuffle and repeat icons).
+
+Installation:
+* Install the dependencies: `fontawesome`
+* Put the scripts in `~/.config/mpv/scripts`
+* Put the script-opts in `~/.config/mpv/script-opts`
+* Open the `mpv.conf` in this repository and modify your own `~/.config/mpv/mpv.conf` to have **all** the necessary settings, and preferably the recommended ones as well.
+* open the `input.conf` in this repository and add the keybinds to your own `~/.config/mpv/input.conf`
+
