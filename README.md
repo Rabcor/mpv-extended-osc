@@ -1,6 +1,6 @@
-NOT READY YET! WIP! (I'm slowly uploading the files, when I'm done I'll upload some screenshots, but there are still a few kinks I need to work out)
+This is primarily a UI extension for MPV, it very slightly alters the layout of the base OSC, adds shuffle and repeat buttons, and thumbnail support based on thumbfast, and a configurable history management script that auto-opens the last file or auto opens the history list when opening mpv without a file selected. 
 
-This is primarily a UI extension for MPV, it very slightly alters the layout of the base OSC, adds shuffle and repeat buttons, and thumbnail support based on thumbfast. Only tested on Linux and my edit of thumbfast also works only on Linux.
+Only tested on Linux and my edit of thumbfast also works only on Linux.
 
 Dependencies: 
 
@@ -13,3 +13,8 @@ Installation:
 * Open the `mpv.conf` in this repository and modify your own `~/.config/mpv/mpv.conf` to have **all** the necessary settings, and preferably the recommended ones as well.
 * open the `input.conf` in this repository and add the keybinds to your own `~/.config/mpv/input.conf`
 
+This is only partially ready, I will be uploading previews when it is really ready.
+
+Bugs to work out still:
+* hwdec must be off or set to copyback for my thumbfast to work properly
+* Possible memory leaking from thumbfast (thumbfast leaving processes open after mpv is closed)
