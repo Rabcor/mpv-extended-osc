@@ -1,7 +1,5 @@
 This is an OSC extension for MPV, along with a few useful scripts.
 
-It also adds a configurable history management script that auto-opens the last file or auto opens the history list when opening mpv without a file selected. 
-
 Only tested on Linux and my edit of thumbfast also probably only works on Linux.
 
 https://github.com/user-attachments/assets/ca3c7b0a-6f8a-44a5-b825-6ef04198fdb5
@@ -10,6 +8,10 @@ Changes from original OSC:
 * Removed Fullscreen Button
 * Added Shuffle and Repeat buttons
 * Added support for thumbfast (bare minimum)
+
+Other Features:
+* A configurable history management script that auto-opens the last file or auto opens the history list when opening mpv without a file selected.
+* A modified version of thumbfast that automatically scales with the window size (without using scale_factor)
 
 Dependencies: 
 
