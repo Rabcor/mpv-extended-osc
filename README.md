@@ -29,4 +29,4 @@ Known bugs:
 * hwdec must be off or set to copyback for my thumbfast to work properly
 
 Limitations:
-* Only the default layout is supported, even if the code for the other layouts is still there, they may be broken and will be missing some or all of the added features. I keep this code because I want to keep the difference from the original OSC as minimal as possible to make updating this osc simpler.
+* Only the default layout is supported, even if the code for the other layouts is still there, they may be broken and will be missing some or all of the added features. I keep this code because I want to keep the difference from the original OSC as minimal as possible to make updating simpler.
