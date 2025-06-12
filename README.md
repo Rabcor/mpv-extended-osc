@@ -12,6 +12,7 @@ Changes from original OSC:
 Other Features:
 * A configurable history management script that auto-opens the last file or auto opens the history list when opening mpv without a file selected.
 * A modified version of thumbfast that automatically scales with the window size (without using scale_factor)
+* Smart Chapter Seeking (when using the keybind in my input.conf for it, if trying to seek to next/prev chapter but no chapter is found, skip to next/prev playlist item instead)
 
 Dependencies: 
 
