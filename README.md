@@ -30,7 +30,7 @@ Limitations:
 
 Known bugs:
 * hwdec must be off or set to copyback for my thumbfast to work properly
-* The loop and shuffle symbols may be smaller for some users, I am not sure why this is.
+* The loop and shuffle symbols may be smaller for some users, I am not sure why this is. It will throw off the accuracy of the buttons a bit (e.g. the clickable area will be a bit bigger than the buttons)
 Planned Features:
 * Loop and Shuffle buttons will be dark/grey when looping/shuffling is disabled, and normal (white) when they are on respectively.
 
