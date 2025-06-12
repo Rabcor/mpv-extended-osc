@@ -1,10 +1,15 @@
-This is a UI extension for MPV, it very slightly alters the layout of the base OSC, adds shuffle and repeat buttons, and thumbnail support based on thumbfast.
+This is an OSC extension for MPV, along with a few useful scripts.
 
 It also adds a configurable history management script that auto-opens the last file or auto opens the history list when opening mpv without a file selected. 
 
 Only tested on Linux and my edit of thumbfast also probably only works on Linux.
 
 https://github.com/user-attachments/assets/ca3c7b0a-6f8a-44a5-b825-6ef04198fdb5
+
+Changes from original OSC:
+* Removed Fullscreen Button
+* Added Shuffle and Repeat buttons
+* Added support for thumbfast (bare minimum)
 
 Dependencies: 
 
@@ -19,3 +24,6 @@ Installation:
 
 Known bugs:
 * hwdec must be off or set to copyback for my thumbfast to work properly
+
+Limitations:
+* Only the default layout is supported, even if the code for the other layouts is still there, they may be broken and will be missing some or all of the added features.
