@@ -176,8 +176,8 @@ local icons = {
     minimize = "\238\132\146",       -- E112
     maximize = "\238\132\147",       -- E113
     unmaximize = "\238\132\148",     -- E114
-    shuffle = "\240\159\148\128",    -- 01F500 (F074 Fontawesome)
-    loop = "\240\159\148\132"		 -- 01F504 (F2F1 Fontawesome)
+    shuffle = "\239\129\180",    	 -- F074 (Fontawesome)
+    loop = "\239\128\158"		 	 -- F01E (Fontawesome)
 }
 
 local osc_param = { -- calculated by osc_init()
@@ -1726,7 +1726,7 @@ local function bar_layout(direction, slim)
 
     -- Playback control buttons
     geo = { x = osc_geo.x + padX + padwc_l, y = line2, an = 4,
-            w = buttonW, h = 36 - padY*2}
+            w = buttonW - 4, h = 36 - padY*2}
     lo = add_layout("play_pause")
     lo.geometry = geo
     lo.style = osc_styles.smallButtonsBar
@@ -1736,24 +1736,37 @@ local function bar_layout(direction, slim)
     lo.geometry = geo
     lo.style = osc_styles.smallButtonsBar
 
-    geo = { x = geo.x + geo.w, y = geo.y, an = geo.an, w = 12, h = geo.h }
+    geo = { x = geo.x + geo.w + 4, y = geo.y, an = geo.an, w = 12, h = geo.h }
     lo = add_layout("playlist_prev")
     lo.geometry = geo
     lo.style = osc_styles.topButtonsBar
 	
-    geo = { x = geo.x + geo.w + padX, y = geo.y, an = geo.an, w = 12, h = geo.h }
+    geo = { x = geo.x + geo.w + 4, y = geo.y, an = geo.an, w = 12, h = geo.h }
     lo = add_layout("playlist_next")
     lo.geometry = geo
     lo.style = osc_styles.topButtonsBar
     
-    geo = { x = geo.x + geo.w + 7.5, y = geo.y, an = geo.an, w = geo.w, h = geo.h }
+    geo = { x = geo.x + geo.w + 7.5, y = geo.y, an = geo.an, w = 24, h = geo.h }
     lo = add_layout("chapter_next")
     lo.geometry = geo
     lo.style = osc_styles.smallButtonsBar
 
+	
+	-- shuffle
+    geo = { x = geo.x + geo.w + 5, y = geo.y, an = geo.an, w = 24, h = geo.h }
+    lo = add_layout("shuffle")
+    lo.geometry = geo
+    lo.style = osc_styles.smallButtonsBar
+
+	-- loop
+	geo = { x = geo.x + geo.w + padX, y = geo.y, an = geo.an, w = 24, h = geo.h }
+    lo = add_layout("loop")
+    lo.geometry = geo
+    lo.style = osc_styles.smallButtonsBar
+    
     -- Left timecode
-    geo = { x = geo.x + geo.w + padX + tcW, y = geo.y, an = 6,
-            w = tcW, h = geo.h }
+    geo = { x = geo.x + tcW , y = geo.y, an = 6,
+            w = tcW * 0.8, h = geo.h }
     lo = add_layout("tc_left")
     lo.geometry = geo
     lo.style = osc_styles.timecodesBar
@@ -1766,18 +1779,7 @@ local function bar_layout(direction, slim)
     lo = add_layout("volume")
     lo.geometry = geo
     lo.style = osc_styles.smallButtonsBar
-	
-	-- shuffle
-    geo = { x = geo.x - buttonW - padX, y = geo.y, an = geo.an, w = buttonW, h = geo.h }
-    lo = add_layout("shuffle")
-    lo.geometry = geo
-    lo.style = osc_styles.smallButtonsBar
 
-	-- loop
-    geo = { x = geo.x - buttonW - padX, y = geo.y, an = geo.an, w = buttonW, h = geo.h }
-    lo = add_layout("loop")
-    lo.geometry = geo
-    lo.style = osc_styles.smallButtonsBar
     
     -- Track selection buttons
     geo = { x = geo.x - tsW - padX, y = geo.y, an = geo.an, w = tsW, h = geo.h }
