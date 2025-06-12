@@ -1,6 +1,8 @@
-This is primarily a UI extension for MPV, it very slightly alters the layout of the base OSC, adds shuffle and repeat buttons, and thumbnail support based on thumbfast, and a configurable history management script that auto-opens the last file or auto opens the history list when opening mpv without a file selected. 
+This is a UI extension for MPV, it very slightly alters the layout of the base OSC, adds shuffle and repeat buttons, and thumbnail support based on thumbfast.
 
-Only tested on Linux and my edit of thumbfast also works only on Linux (I stripped out the windows and macos parts because I don't use those operating systems, and never will.)
+It also adds a configurable history management script that auto-opens the last file or auto opens the history list when opening mpv without a file selected. 
+
+Only tested on Linux and my edit of thumbfast also probably only works on Linux.
 
 https://github.com/user-attachments/assets/ca3c7b0a-6f8a-44a5-b825-6ef04198fdb5
 
