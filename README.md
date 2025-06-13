@@ -35,8 +35,8 @@ Limitations:
 Known bugs:
 * hwdec must be off or set to copyback for my thumbfast to work properly
 * The loop and shuffle symbols may be smaller for some users, I am not sure why this is. It will throw off the accuracy of the buttons a bit (e.g. the clickable area will be a bit bigger than the buttons); if this happens to you [here's how you can replace the icon](https://github.com/Rabcor/mpv-extended-osc/wiki/How-to-replace-a-button-icon-in-mpv).
-Planned Features:
-* Loop and Shuffle buttons will be dark/grey when looping/shuffling is disabled, and normal (white) when they are on respectively.
 
+Planned Features:
+* Loop button will be dark/grey when looping/shuffling is disabled, and normal (white) when it is enabled.
 
 
