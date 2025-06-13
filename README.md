@@ -10,6 +10,7 @@ https://github.com/user-attachments/assets/a8f874a9-9a5b-46af-b9b9-fed66b2187d6
 
 Changes from original OSC:
 * Removed the most pointless (fullscreen) button to free up space.
+* Moved Playlist Seek buttons between the Chapter Seek buttons (imitating MPC-HC, also just makes more sense to have these buttons together)
 * Added Shuffle and Repeat buttons
 * Added support for thumbfast (bare minimum)
 
