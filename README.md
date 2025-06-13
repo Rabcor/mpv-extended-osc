@@ -9,7 +9,7 @@ https://github.com/user-attachments/assets/a8f874a9-9a5b-46af-b9b9-fed66b2187d6
 
 
 Changes from original OSC:
-* Removed Fullscreen Button
+* Removed the most pointless (fullscreen) button to free up space.
 * Added Shuffle and Repeat buttons
 * Added support for thumbfast (bare minimum)
 
