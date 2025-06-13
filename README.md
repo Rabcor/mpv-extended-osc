@@ -2,7 +2,11 @@ This is an OSC extension for MPV, along with a few useful scripts.
 
 Only tested on Linux and my edit of thumbfast also probably only works on Linux.
 
-https://github.com/user-attachments/assets/ca3c7b0a-6f8a-44a5-b825-6ef04198fdb5
+
+
+https://github.com/user-attachments/assets/a8f874a9-9a5b-46af-b9b9-fed66b2187d6
+
+
 
 Changes from original OSC:
 * Removed Fullscreen Button
