@@ -5,12 +5,12 @@ Only linux is supported.
 https://github.com/user-attachments/assets/a8f874a9-9a5b-46af-b9b9-fed66b2187d6
 
 Changes from original OSC:
-* Removed the most pointless (fullscreen) button to free up space.
+* Removed the most pointless button (fullscreen) to free up space.
 * Moved Playlist Seek buttons between the Chapter Seek buttons (imitating MPC-HC, also just makes more sense to have these buttons together)
 * Added Shuffle and Repeat buttons
-* Added support for thumbfast (bare minimum)
+* Added support for thumbfast
 
-Other Features:
+Scripts:
 * A configurable watch-history management script that auto-opens the last file or auto opens the history list when opening mpv without a file selected.
 * A modified version of thumbfast that automatically scales with the window size (without using scale_factor)
 * Smart Chapter Seeking (when using the keybind in my input.conf for it, if trying to seek to next/prev chapter but no chapter is found, skip to next/prev playlist item instead)
