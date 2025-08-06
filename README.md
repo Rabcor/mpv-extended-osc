@@ -1,12 +1,8 @@
 This is an OSC extension for MPV, along with a few useful scripts. Although it is fully functional, it is still experimental, scroll down and read about known bugs before using.
 
-Only tested on Linux and my edit of thumbfast also probably only works on Linux.
-
-
+Only linux is supported.
 
 https://github.com/user-attachments/assets/a8f874a9-9a5b-46af-b9b9-fed66b2187d6
-
-
 
 Changes from original OSC:
 * Removed the most pointless (fullscreen) button to free up space.
@@ -38,5 +34,3 @@ Known bugs:
 
 Planned Features:
 * Loop button will be dark/grey when looping/shuffling is disabled, and normal (white) when it is enabled.
-
-
