@@ -34,7 +34,6 @@ Limitations:
 * Only the default layout is supported, even if the code for the other layouts is still there, they may be broken and will be missing some or all of the added features. I keep this code because I want to keep the difference from the original OSC as minimal as possible to make updating simpler.
 
 Known bugs:
-* hwdec must be off or set to copyback for my thumbfast to work properly
 * The loop and shuffle symbols may be smaller for some users, I am not sure why this is. It will throw off the accuracy of the buttons a bit (e.g. the clickable area will be a bit bigger than the buttons); if this happens to you [here's how you can replace the icon](https://github.com/Rabcor/mpv-extended-osc/wiki/How-to-replace-a-button-icon-in-mpv).
 
 Planned Features:
