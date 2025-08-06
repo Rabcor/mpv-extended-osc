@@ -248,6 +248,7 @@ local function remove_thumbnail_files()
     end
     os.remove(options.thumbnail)
     os.remove(options.thumbnail..".bgra")
+    os.remove(options.socket)
 end
 
 local activity_timer
@@ -673,6 +674,7 @@ end
 local function shutdown()
     run("quit")
     remove_thumbnail_files()
+    os.remove(options.socket..".run")
 end
 
 local function on_duration(prop, val)
@@ -698,7 +700,8 @@ mp.observe_property("path", "native", update_property)
 mp.observe_property("vid", "native", sync_changes)
 mp.observe_property("edition", "native", sync_changes)
 mp.observe_property("duration", "native", on_duration)
-mp.observe_property("current-window-scale", "native",function() shutdown() quit() file_load() end)
+mp.observe_property("current-window-scale", "native", file_load)
+
 mp.register_script_message("thumb", thumb)
 mp.register_script_message("clear", clear)
 
