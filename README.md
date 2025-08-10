@@ -1,4 +1,4 @@
-This is an OSC extension for MPV, along with a few useful scripts. Although it is fully functional, it is still experimental, scroll down and read about known bugs before using.
+This is an OSC extension for [MPV](https://github.com/mpv-player/mpv), along with a few useful scripts. Although it is fully functional, it is still experimental, scroll down and read about known bugs before using.
 
 Only linux is supported.
 
